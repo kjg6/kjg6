@@ -31,6 +31,9 @@ class Divide
         return a / b;
     }
 }
+/// <summary>
+/// Calculator class that uses composition to perform basic arithmetic operations.
+/// </summary>
 
 class Calculator
 {
