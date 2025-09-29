@@ -31,3 +31,39 @@ class Divide
         return a / b;
     }
 }
+
+class Calculator
+{
+    private Add add;
+    private Subtract subtract;
+    private Multiply multiply;
+    private Divide divide;
+
+    public Calculator()
+    {
+        add = new Add();
+        subtract = new Subtract();
+        multiply = new Multiply();
+        divide = new Divide();
+    }
+
+    public int Add(int a, int b)
+    {
+        return add.Execute(a, b);
+    }
+
+    public int Subtract(int a, int b)
+    {
+        return subtract.Execute(a, b);
+    }
+
+    public int Multiply(int a, int b)
+    {
+        return multiply.Execute(a, b);
+    }
+
+    public int Divide(int a, int b)
+    {
+        return divide.Execute(a, b);
+    }
+}
