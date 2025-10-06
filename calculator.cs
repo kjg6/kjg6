@@ -37,12 +37,13 @@ class Divide
 
 class Calculator
 {
+    
     private Add add;
     private Subtract subtract;
     private Multiply multiply;
     private Divide divide;
 
-    private Square square;
+
 
     public Calculator()
     {
@@ -50,7 +51,7 @@ class Calculator
         subtract = new Subtract();
         multiply = new Multiply();
         divide = new Divide();
-        square = new Square();
+  
     }
 
     public int Add(int a, int b)
@@ -73,8 +74,5 @@ class Calculator
         return divide.Execute(a, b);
     }
 
-    public int Square(int a)
-    {
-        return square.Execute(a);
-    }
+
 }
