@@ -1,3 +1,6 @@
+/// <summary>
+/// Class for addition operation.
+/// </summary>
 class Add
 {
     public int Execute(int a, int b)
