@@ -37,11 +37,13 @@ class Divide
 
 class Calculator
 {
-    
+
     private Add add;
     private Subtract subtract;
     private Multiply multiply;
     private Divide divide;
+
+    private int result;
 
 
 
@@ -51,7 +53,7 @@ class Calculator
         subtract = new Subtract();
         multiply = new Multiply();
         divide = new Divide();
-  
+
     }
 
     public int Add(int a, int b)
