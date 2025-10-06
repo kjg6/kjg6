@@ -42,12 +42,15 @@ class Calculator
     private Multiply multiply;
     private Divide divide;
 
+    private Square square;
+
     public Calculator()
     {
         add = new Add();
         subtract = new Subtract();
         multiply = new Multiply();
         divide = new Divide();
+        square = new Square();
     }
 
     public int Add(int a, int b)
@@ -68,5 +71,10 @@ class Calculator
     public int Divide(int a, int b)
     {
         return divide.Execute(a, b);
+    }
+
+    public int Square(int a)
+    {
+        return square.Execute(a);
     }
 }
